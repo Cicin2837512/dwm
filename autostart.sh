@@ -1,6 +1,8 @@
 #!/bin/env bash
 
-setxkbmap -option 'caps:swapescape' &
+xss-lock -- slock &
+# setxkbmap -option 'ctrl:swapcaps' & # for emacs
+setxkbmap -option 'caps:swapescape' & # for vim
 xset r rate 300 50 &
 picom &
 nitrogen --restore &
